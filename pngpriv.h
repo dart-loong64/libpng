@@ -54,6 +54,7 @@
 /* Standard library headers not required by png.h: */
 #  include <stdlib.h>
 #  include <string.h>
+#  include <stdint.h>
 #endif
 
 #define PNGLIB_BUILD /*libpng is being built, not used*/
