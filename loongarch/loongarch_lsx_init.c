@@ -20,7 +20,6 @@
 static int
 png_has_lsx(void)
 {
-    int flags = 0;
     int flag  = (int)getauxval(AT_HWCAP);
 
     if (flag & LA_HWCAP_LSX)
