@@ -43,6 +43,13 @@ source_set("libpng") {
     cflags_c += [ "-Wno-sign-compare" ]
   }
 
+  if (current_cpu == "loong64") {
+    sources += [
+      "loongarch/filter_lsx_intrinsics.c",
+      "loongarch/loongarch_lsx_init.c",
+    ]
+  }
+
   if (is_win) {
     cflags_c += [ "-Wno-tautological-constant-out-of-range-compare" ]
   }
